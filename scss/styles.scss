@@ -13,8 +13,7 @@ header{
     position: relative;
         img{
             width:197px;
-        }
-    
+        }    
 }
 
 #location-icon-header{
@@ -27,6 +26,7 @@ header{
     p{
         margin: 0;
         padding: 15px;
+
     }
     
 }
@@ -40,7 +40,7 @@ header{
 }
 
 .button-pink{
-    background: rgb(255,121,218);
+    border: 1px solid rgba(238, 130, 238, 0);
     background: linear-gradient(139deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
     border-radius: 25px;
@@ -51,16 +51,24 @@ header{
     display: inline-block;
 }
 
+.button-pink:hover{
+    border: 1px solid violet;
+    color:grey;
+    background: linear-gradient(139deg, rgb(245, 195, 231) 0%, rgb(207, 177, 244) 100%);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
 #fonctionnement{
     padding: 30px 20px 65px 20px;
     background-color: #FFFFFF;
     
 
     p{
+       
         background-color: #F7F7F7;;
         padding: 25px 30px;
         border-radius: 20px;
-        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.30);
         margin: 20px 13px 20px 14px;
         position: relative;
 
@@ -77,9 +85,118 @@ header{
             left: -8px;
     
         }
+}
+}
 
-        i{
-            margin-right: 10px;
+#restaurants{
+    padding: 30px 20px 65px 20px;
+
+    .article-restaurants{
+        background-color: #fff;
+        border-radius: 15px;
+        overflow: hidden;
+        margin-bottom: 20px;
+        position: relative;
+        
+
+        span{
+            position: absolute;
+            background: aqua;
+            padding: 8px 15px;
+            top: 15px;
+            right: 15px;
+        }
+
+        img{
+            width:100%;
+            object-fit: cover;
+            aspect-ratio: 16/9
+        }
+
+
+        .footer-article-restaurants{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding:15px;
+
+            h3{
+                margin-bottom: 0.5rem;
+                margin-top: 0;
+            }
+
+            p{
+                margin: 0;
+            }
+
+            i{
+                font-size: 1.8em;
+            }
+
+
         }
     }
+
+} 
+
+footer{
+    background-color: #353535;
+    color: #fff;
+    padding: 15px;
+
+    h2{
+        font-family: 'Shrikhand', serif ;
+    }
+
+    i{
+        margin-right: 10px;
+    }
+
+    a{
+        color: #fff;
+        text-decoration: none;
+        display: inline-block;
+        padding: 5px;
+    }
+    div{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .container{
+        max-width: 80%;
+        margin: auto;
+    }
+    #fonctionnement-etapes{
+        display: flex;
+        justify-content: space-between;
+    }
+    #restaurants-articles{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    #restaurants .article-restaurants{
+        width:45%;
+    }
+    footer{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+
+        h2{
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+        div{
+            flex-direction: row;
+        }
+        :nth-child(3){
+            margin-left: 25px;
+        }
+    }
+
 }

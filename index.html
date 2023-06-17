@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,6 +15,7 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <title>ohmyfood</title>
 </head>
+
 <body>
     <header>
         <img src="assets/img/logo/ohmyfood.png" alt="logo">
@@ -28,27 +30,98 @@
             <p>
                 Découvrez des restaurants d’exception, sélectionnés par nos soins.
             </p>
-            <a href="" class="button-pink">Explorez nos restaurants</a>
+            <a href="#restaurants" class="button-pink">Explorez nos restaurants</a>
         </section>
         <section id="fonctionnement">
-            <h2>Fonctionnement</h2>
-            <p>
-                <span>1</span>
-                <i class="fa-solid fa-mobile-screen-button"></i>
-                Choisissez un restaurant
-            </p>
-            <p>
-                <span>2</span>
-                <i class="fa-solid fa-list-ul"></i>
-                Composez votre menu
-            </p>
-            <p>
-                <span>3</span>
-                <i class="fa-solid fa-store"></i>
-                Dégustez au restaurant
-            </p>
+            <div class="container">
+                <h2>Fonctionnement</h2>
+                <div id="fonctionnement-etapes">
+                    <p>
+                        <span>1</span>
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        Choisissez un restaurant
+                    </p>
+                    <p>
+                        <span>2</span>
+                        <i class="fa-solid fa-list-ul"></i>
+                        Composez votre menu
+                    </p>
+                    <p>
+                        <span>3</span>
+                        <i class="fa-solid fa-store"></i>
+                        Dégustez au restaurant
+                    </p>
+                </div>
+            </div>
         </section>
+        <section id="restaurants">
+            <div class="container">
+                <h2>Restaurants</h2>
+                <div id="restaurants-articles">
+                    <article class="article-restaurants">
+                        <span>Nouveau</span>
+                        <img src="assets/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
+                        <div class="footer-article-restaurants">
+                            <div>
+                                <h3>La palette du goût</h3>
+                                <p>Ménilmontant</p>
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="article-restaurants">
+                        <span>Nouveau</span>
+                        <img src="assets/img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="">
+                        <div class="footer-article-restaurants">
+                            <div>
+                                <h3>La note enchantée</h3>
+                                <p>Charonne</p>
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="article-restaurants">
+                        <img src="assets/img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="">
+                        <div class="footer-article-restaurants">
+                            <div>
+                                <h3>A la française</h3>
+                                <p>Cité rouge</p>
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="article-restaurants">
+                        <img src="assets/img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="">
+                        <div class="footer-article-restaurants">
+                            <div>
+                                <h3>Le délice des sens</h3>
+                                <p>Folie-Méricourt</p>
+                            </div>
+                            <div>
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <h2>ohmyfood</h2>
+            <div>
+                <a href=""><i class="fa-solid fa-utensils"></i> Proposer un restaurant</a>
+                <a href=""><i class="fa-regular fa-handshake"></i> Devenir partenaire</a>
+                <a href="">Mentions légales</a>
+                <a href="">Contact</a>
+            </div>
+        </footer>
 
-    </main>  
+    </main>
 </body>
+
 </html>
