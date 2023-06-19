@@ -100,7 +100,8 @@ header img {
 }
 #restaurants .article-restaurants img {
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   aspect-ratio: 16/9;
 }
 #restaurants .article-restaurants .footer-article-restaurants {
@@ -174,6 +175,4 @@ footer div {
   footer :nth-child(3) {
     margin-left: 25px;
   }
-}
-
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */
