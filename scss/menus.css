@@ -3,24 +3,30 @@ body {
   font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #F7F7F7;
-}
-
-.flexBetween {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  background-color: #f7f7f7;
 }
 
 header {
-  text-align: center;
+  position: relative;
   padding: 25px 0 15px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
-  z-index: 1;
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 header img {
   width: 197px;
+}
+header a {
+  position: absolute;
+  left: 17px;
+}
+
+main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .imgJay {
@@ -32,8 +38,13 @@ header img {
 
 /* Background */
 .card {
-  border-radius: 20px, 20px, 20px, 20px;
-  background: #F7F7F7;
+  border-radius: 20px 20px 0 0;
+  background: #f6f6f6;
+  position: relative;
+  bottom: 30px;
+  width: calc(100% - 34px);
+  padding-left: 17px;
+  padding-right: 17px;
 }
 
 /* La palette du goût */
