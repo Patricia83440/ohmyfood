@@ -79,22 +79,27 @@ main {
   color: #000000;
 }
 
-/* Name */
-.name {
-  width: 287px;
-  height: 21px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
+/* Content */
+.content {
+  font-family: Roboto;
   font-size: 18px;
-  line-height: 21px;
-  /* identical to box height */
-  color: #000000;
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  align-self: stretch;
-  flex-grow: 0;
+  font-weight: 500;
+  line-height: 21pxs;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgb(0, 0, 0);
+  width: Fixed 349px;
+  height: Fixed 69px;
+  border-radius: 15.0431032181px;
+}
+.content h6 {
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgb(0, 0, 0);
 }
 
 .button-pink {
