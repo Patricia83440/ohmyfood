@@ -42,6 +42,7 @@ main {
 
 .imgJay {
   width: 100%;
+  height: 400px;
   object-fit: cover;
   aspect-ratio: 16/9;
 }
@@ -90,11 +91,12 @@ main {
   display: flex;
   flex-direction: column;
   align-self: center;
+  row-gap: 12px;
 
   .menu-block {
     width: calc(100% - 34px);
+    display: flex;
     flex-direction: column;
-    row-gap: 12px;
     margin-top: 20px;
 
     &-title {
@@ -117,34 +119,61 @@ main {
     }
 
     &-item {
-      margin-top: 39px;
+      height: 75px;
       background-color: white;
       border-radius: 15px;
-      padding: 13px 15px;
+      padding: 0 15px;
+      padding-right: 0;
       display: flex;
       justify-content: space-between;
-      align-items: flex-end;
+      align-items: center;
       box-shadow: 0 4px 15px #0000001a;
+      overflow: hidden;
 
-      .title {
+      .left {
         display: flex;
-        flex-direction: column;
-        row-gap: 5px;
+        align-items: flex-end;
+        justify-content: space-between;
+        width: 100%;
+        padding-right: 15px;
 
-        h3 {
-          font-weight: 500;
-          font-size: 18px;
+        .title {
+          display: flex;
+          flex-direction: column;
+          row-gap: 5px;
+
+          h3 {
+            font-weight: 500;
+            font-size: 18px;
+          }
+
+          p {
+            font-weight: 300;
+            font-size: 15px;
+          }
         }
 
-        p {
-          font-weight: 300;
+        .price {
+          font-weight: 700;
           font-size: 15px;
         }
       }
 
-      .price {
-        font-weight: 700;
-        font-size: 15px;
+      .check {
+        width: 0;
+        height: 100%;
+        background-color: #99e2d0;
+        transition: 500ms ease-in-out;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+      }
+
+      &:hover {
+        .check {
+          width: 60px;
+        }
       }
     }
   }
