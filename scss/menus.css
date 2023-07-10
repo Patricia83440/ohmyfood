@@ -86,17 +86,36 @@ main {
 
 #menu-block-container {
   width: 100%;
-  max-width: 634px;
   display: flex;
   flex-direction: column;
-  align-self: center;
-  row-gap: 12px;
+  align-items: center;
+  row-gap: 38px;
+}
+@keyframes showItem {
+  0% {
+    transform: translateY(100px);
+    opacity: 0.2;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }
 #menu-block-container .menu-block {
   width: calc(100% - 34px);
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
+  row-gap: 12px;
+  animation: showItem 1500ms ease-in-out both;
+}
+#menu-block-container .menu-block:first-child {
+  animation: showItem 1500ms ease-in-out both;
+}
+#menu-block-container .menu-block:nth-child(2) {
+  animation: showItem 1500ms 250ms ease-in-out both;
+}
+#menu-block-container .menu-block:nth-child(3) {
+  animation: showItem 1500ms 500ms ease-in-out both;
 }
 #menu-block-container .menu-block-title {
   text-transform: uppercase;
@@ -104,13 +123,12 @@ main {
   font-size: 16px;
   position: relative;
   margin-bottom: 10px;
-  margin-top: 30px;
 }
 #menu-block-container .menu-block-title::after {
   content: "";
   width: 40px;
   height: 3px;
-  background-color: #99e2d0;
+  background-color: #99E2D0;
   position: absolute;
   left: 0;
   bottom: -10px;
@@ -154,12 +172,15 @@ main {
 #menu-block-container .menu-block-item .check {
   width: 0;
   height: 100%;
-  background-color: #99e2d0;
+  background-color: #99E2D0;
   transition: 500ms ease-in-out;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
+}
+#menu-block-container .menu-block-item .check i {
+  color: white;
 }
 #menu-block-container .menu-block-item:hover .check {
   width: 60px;
