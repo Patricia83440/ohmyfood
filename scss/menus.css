@@ -182,7 +182,7 @@ main {
 #menu-block-container .menu-block-item .check i {
   color: white;
 }
-#menu-block-container .menu-block-item:hover .check {
+#menu-block-container .menu-block:hover .check {
   width: 60px;
 }
 

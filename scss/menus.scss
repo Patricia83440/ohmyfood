@@ -197,12 +197,14 @@ main {
                 }
             }
 
-            &:hover {
-                .check {
-                    width: 60px;
-                }
-            }
+           
         }
+
+        &:hover {
+          .check {
+              width: 60px;
+          }
+      }
     }
 }
 
