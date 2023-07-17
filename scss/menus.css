@@ -144,6 +144,13 @@ main {
   align-items: center;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1019607843);
   overflow: hidden;
+  position: relative;
+}
+#menu-block-container .menu-block-item input {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
 }
 #menu-block-container .menu-block-item .left {
   display: flex;
@@ -182,7 +189,7 @@ main {
 #menu-block-container .menu-block-item .check i {
   color: white;
 }
-#menu-block-container .menu-block:hover .check {
+#menu-block-container .menu-block-item input:checked + .check {
   width: 60px;
 }
 

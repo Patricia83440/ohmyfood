@@ -152,6 +152,14 @@ main {
             align-items: center;
             box-shadow: 0 4px 15px #0000001a;
             overflow: hidden;
+            position: relative;
+
+            input{
+              width: 100%;
+              height: 100%;
+              opacity: 0;
+              position: absolute;
+            }
 
             .left {
                 display: flex;
@@ -195,17 +203,18 @@ main {
                 i {
                   color: white;
                 }
+
+                
             }
 
+            input:checked + .check {
+             
+                  width: 60px;
+             
+          }
            
         }
-
-        &:hover {
-          .check {
-              width: 60px;
-          }
-      }
-    }
+        }
 }
 
 .button-pink {
