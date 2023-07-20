@@ -30,18 +30,20 @@ header a {
   position: absolute;
   left: 17px;
 }
+header i {
+  color: #353535;
+}
 
 main {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  align-self: center;
 }
 
 .imgJay {
   width: 100%;
-  height: 400px;
+  height: 275px;
   -o-object-fit: cover;
      object-fit: cover;
   aspect-ratio: 16/9;
@@ -102,7 +104,7 @@ main {
   }
 }
 #menu-block-container .menu-block {
-  width: calc(100% - 34px);
+  width: 100%;
   display: flex;
   flex-direction: column;
   row-gap: 12px;
@@ -128,7 +130,7 @@ main {
   content: "";
   width: 40px;
   height: 3px;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   position: absolute;
   left: 0;
   bottom: -10px;
@@ -138,7 +140,6 @@ main {
   background-color: white;
   border-radius: 15px;
   padding: 0 15px;
-  padding-right: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -157,20 +158,32 @@ main {
   align-items: flex-end;
   justify-content: space-between;
   width: 100%;
-  padding-right: 15px;
+  overflow-x: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  transition: 500ms ease-in-out;
 }
 #menu-block-container .menu-block-item .left .title {
   display: flex;
   flex-direction: column;
   row-gap: 5px;
+  overflow-x: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 #menu-block-container .menu-block-item .left .title h3 {
   font-weight: 500;
   font-size: 18px;
+  overflow-x: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 #menu-block-container .menu-block-item .left .title p {
   font-weight: 300;
   font-size: 15px;
+  overflow-x: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 #menu-block-container .menu-block-item .left .price {
   font-weight: 700;
@@ -179,18 +192,23 @@ main {
 #menu-block-container .menu-block-item .check {
   width: 0;
   height: 100%;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   transition: 500ms ease-in-out;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  position: absolute;
+  right: 0;
 }
 #menu-block-container .menu-block-item .check i {
   color: white;
 }
-#menu-block-container .menu-block-item input:checked + .check {
+#menu-block-container .menu-block-item input:checked ~ .check {
   width: 60px;
+}
+#menu-block-container .menu-block-item input:checked ~ .left {
+  width: calc(100% - 60px);
 }
 
 .button-pink {
