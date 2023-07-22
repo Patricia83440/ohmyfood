@@ -109,7 +109,7 @@ main {
   }
 
   .menu-block {
-    width: calc(100%);
+    width: calc(100% -34px);
     display: flex;
     flex-direction: column;
     row-gap: 12px;
