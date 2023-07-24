@@ -192,7 +192,7 @@ header {
           position: relative;
           
           i:nth-child(2){
-            background-color:linear-gradient(180deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
+            background:linear-gradient(180deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
             background: -webkit-linear-gradient(180deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
             -webkit-background-clip: text;
             background-clip: text;

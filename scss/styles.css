@@ -168,7 +168,7 @@ header img {
   position: relative;
 }
 #restaurants .article-restaurants .footer-article-restaurants .heart i:nth-child(2) {
-  background-color: linear-gradient(180deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 100%);
+  background: linear-gradient(180deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 100%);
   background: -webkit-linear-gradient(180deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 100%);
   -webkit-background-clip: text;
   background-clip: text;
